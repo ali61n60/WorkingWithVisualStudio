@@ -6,6 +6,7 @@ using WorkingWithVisualStudio.Models;
 
 namespace WorkingWithVisualStudio.Tests
 {
+    //NCrunch added to visual studio
     [TestFixture]
     public class ProductTests
     {
@@ -28,7 +29,7 @@ namespace WorkingWithVisualStudio.Tests
             // Act
             p.Price = 200M;
             //Assert
-            Assert.That( p.Price,Is.EqualTo(100M));
+            Assert.That( p.Price,Is.EqualTo(200M));
         }
     }
 }
