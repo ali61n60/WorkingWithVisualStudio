@@ -5,7 +5,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Working with Visual Studio</title>
-    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body class="panel-body">
 <h3 class="text-center">Products</h3>
@@ -19,6 +19,10 @@
             <td>@p.Name</td>
             <td>@($"{p.Price:C2}")</td>
         </tr>
+    }
+    @for(int i = 0; i < 10; i++){
+        <tr><td>test for @i</td><td>no data</td></tr>
+
     }
     </tbody>
 </table>

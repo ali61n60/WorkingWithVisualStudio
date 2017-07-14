@@ -4,7 +4,6 @@ using WorkingWithVisualStudio.Models;
 
 namespace WorkingWithVisualStudio.Controllers
 {
-    //TODO BrowserLink Didnot Work
     public class HomeController:Controller
     {
         public IRepository Repository = SimpleRepository.SharedRepository;
