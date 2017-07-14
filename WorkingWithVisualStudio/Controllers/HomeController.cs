@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using WorkingWithVisualStudio.Models;
-using System.Linq;
 
 namespace WorkingWithVisualStudio.Controllers
 {
     //TODO BrowserLink Didnot Work
     public class HomeController:Controller
     {
-        SimpleRepository Repository = SimpleRepository.SharedRepository;
+        public IRepository Repository = SimpleRepository.SharedRepository;
 
         public IActionResult Index()
         {
-            return View(Repository.Products);//.Where(p => p?.Price < 50));
+            return View(Repository.Products.Where(p => p?.Price < 50));
         }
 
         [HttpGet]

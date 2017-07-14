@@ -2,7 +2,7 @@
 
 namespace WorkingWithVisualStudio.Models
 {
-    public class SimpleRepository
+    public class SimpleRepository:IRepository
     {
         private Dictionary<string, Product> products= new Dictionary<string, Product>();
         public static SimpleRepository SharedRepository { get; } = new SimpleRepository();
